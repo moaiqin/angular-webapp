@@ -1,0 +1,94 @@
+.app-login{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	top:0;
+	z-index: -1;
+	background-image: url('../image/background.png');
+	background-size: cover;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	.login-input{
+		li{
+			background-color: rgba(0,0,0,0.4);
+			.h(80);
+			.lh(80);
+			.pr(40);
+			.mt(3);
+			position: relative;
+			span{
+				position: absolute;
+				right: 3px;
+				vertical-align: middle;
+				top: 0;
+				color: red;
+			}
+			&.get-code{
+				.mt(40);
+				input{
+					width: 50%;
+				}
+				span{
+					background:transparent;
+					color: @headerBg;
+					float: right;
+					width: 45%;
+					text-align: right;
+				}
+			}
+			input{
+				background-color: transparent;
+				border: none;
+				.h(40);
+				.lh(40);
+				.pl(20);
+				width: 40%;
+				vertical-align: middle;
+				color: red;
+				color: #fff;
+				&::-webkit-input-placeholder{
+					color: @defaultColor;
+				}
+				&:focus{
+					outline: none;
+				}
+			}
+			.log{
+				display: inline-block;
+				.w(100);
+				height: 100%;
+				vertical-align: middle;
+				background-color: rgba(0,0,0,0.2);
+				background-repeat: no-repeat;
+				background-position: center center;
+				&.login-user{
+					background-image: url('../image/account.png');
+				}
+				&.login-paw{
+					background-image: url('../image/lock.png');
+				}
+			}
+		}
+	}
+	.btn{
+		.mt(80);
+		button{
+			display: block;
+			background: rgba(0,190,192,0.3);
+			border: 1px solid @headerBg;
+			width: 100%;
+			.h(70);
+			.lh(70);
+			color: #fff;
+			&:last-child{
+				.mt(10);
+			}
+			&.active{
+				background: rgba(0,190,192,0.8);
+			}
+		}
+	}
+
+}

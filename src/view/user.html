@@ -1,0 +1,19 @@
+<div app-position-header router="main" text="个人中心"></div>
+<div class="user">
+	<img src="{{image}}">
+	<div>{{username}}</div>
+	<div class="user-main-list cl-fix">
+		<span ui-sref="post">投递</span>
+		<span ui-sref="store">收藏</span>
+	</div>
+	<ul class="user-set">
+		<li>编辑资料</li>
+		<li>投递记录</li>
+		<li>面试记录</li>
+		<li>面试邀请</li>
+		<li>个人简历</li>
+	</ul>
+</div>
+<div class="logout">
+    <button ng-click="logout()">退出</button>
+</div>

@@ -1,0 +1,15 @@
+<div class="position-list">
+    <div ng-if="!data.length" class="no-position">暂时还没有职位
+    </div>
+	<div ui-sref="position({id:item.id})" 
+	class="position-item cl-fix" 
+	ng-repeat="item in data|filterByObj:filterObj">
+	    <span ng-if="store" class="store {{item.store? 'active': ''}}"></span>
+		<img class="fl" ng-src="{{item.imageUrl}}">
+		<div class="position-list-dec">
+			<h2 class="jon-name">{{item.job}}</h2>
+			<p class="company-name">{{item.companyName}}[{{item.cityName}}]</p>
+			<p class="date">{{item.date}}</p>
+		</div>
+	</div>
+</div>

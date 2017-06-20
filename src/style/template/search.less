@@ -1,0 +1,51 @@
+.search-header{
+	background-color: @headerBg;
+	.h(110);
+	.lh(110);
+	box-sizing: border-box;
+	.pl(30);
+	.cancel{
+		.pr(20);
+		.fs(30);
+		color: @defaultColor;
+	}
+	.search-input{
+		background-color: @defaultColor;
+		overflow: hidden;
+		.h(66);
+		.lh(66);
+		.mt(22);
+		float: left;
+		width: 76%;
+		.pl(30);
+		border-radius: 25px;
+		input{
+			border: 0;
+			vertical-align: middle;
+			width: 70%;
+			&:focus{
+				outline: none;
+			}
+		}
+		.search-log{
+			vertical-align: middle;
+			color: @headerBg;
+		}
+		.serch-btn{
+			border: none;
+			.pl(15);
+			.pt(4);
+			.pb(4);
+			.pr(15);
+			.mt(7);
+			.mr(20);
+			border-radius: 2px;
+			background-color:@defaultColor;
+			color: @headerBg;
+			&:focus{
+				outline: none;
+			}
+
+		}
+	}
+}

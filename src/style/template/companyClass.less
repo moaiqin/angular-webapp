@@ -1,0 +1,52 @@
+.company-class{
+	.p(10);
+	.pl(20);
+	border-top: 1px solid #eee;
+	h3{
+		.fs(38);
+		color: @headerBg;
+		.pb(20);
+	}
+	.postion-class{
+		padding: 10px 0;
+		button{
+			border: none;
+			.p(15);
+			.pl(30);
+			.pr(30);
+			margin-right: 11px;
+			line-height: 1;
+			background-color: @heightLight;
+			border-radius: 20px;
+			&.active{
+				background-color: @bottonBgActive;
+				color: @defaultColor;
+			}
+			&:focus{
+				outline: none;
+			}
+		}
+	}
+	.company-class-list{
+		.pt(10);
+		li{
+			position: relative;
+			.pb(15);
+			.pt(15);
+			border-bottom: 1px solid #eee;
+			h4{
+				.fs(32);
+				.h(70);
+			}
+			.get-money{
+				position: absolute;
+				top: 15px;
+				right: 10px;
+				color: red;
+			}
+			.company-class-push-time{
+				color: #666;
+			}
+		}
+	}
+}

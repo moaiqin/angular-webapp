@@ -1,0 +1,10 @@
+<div class="search-sheet-wrap" ng-show="visibly" ng-click="visibly=false">
+	<div class="search-sheet-list">
+		<ul class="search-sheet">
+			<li ng-repeat="(key,item) in data"
+			ng-click="changeValue(item)"
+			ng-bind="item.name"></li>
+		</ul>
+		<button class="sheet-btn-cancel" ng-click="visibly=false">取消</button>
+	</div>
+</div>

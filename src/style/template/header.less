@@ -1,0 +1,23 @@
+@import url('../variable.less');
+.header{
+	background: @headerBg;
+	.p(20);
+	.text,.select{
+		color: @defaultColor;
+	}
+	.text{
+		display: inline-block;
+		.fs(40);
+		vertical-align: middle;
+	}
+	.select{
+		background: rgba(1, 171, 69, 0.39);
+		border: none;
+		.pl(18);
+		.pr(18);
+		.pt(10);
+		.pb(10);
+		vertical-align: middle;
+		border-radius: 3px;
+	}
+}

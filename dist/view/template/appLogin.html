@@ -1,0 +1,32 @@
+<div class="app-login">
+	<div class="app-login-wrap">
+		<form name="form">
+			<ul class="login-input">
+				<li>
+					<i class="log login-user"></i>
+					<input 
+					type="text" 
+					ng-model="user.username"
+					validator="phone"
+					placeholder="手机号/用户名" 
+					required 
+					name="username">
+				</li>
+				<li>
+					<i class="log login-paw"></i>
+					<input 
+					type="password" 
+					ng-model='user.password'
+					validator="password"
+					placeholder="密码" 
+					required 
+					name="username">
+				</li>
+			</ul>
+			<div class="btn">
+				<button ng-click="submit()" class="active" validation-submit="form" ng-disabled="!form.$valid">登陆</button>
+				<button ui-sref="register">注册</button>
+			</div>
+		</form>
+	</div>
+</div>

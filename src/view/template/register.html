@@ -1,0 +1,40 @@
+<div class="app-login">
+	<div class="app-login-wrap">
+		<form name="registerForm">
+			<ul class="login-input">
+				<li>
+					<i class="log login-user"></i>
+					<input type="iamge" 
+					placeholder="手机号" 
+					validator='phone',
+					ng-model="user.username"
+					required 
+					name="username">
+				</li>
+				<li>
+					<i class="log login-paw"></i>
+					<input type="password"
+					 placeholder="6-18位密码" 
+					 ng-model="user.password"
+					 validator="password"
+					 required 
+					 name="username">
+				</li>
+				<li class="get-code">
+					<input type="iamge"
+					 required 
+					 placeholder="短信验证码" 
+					 name="username">
+					 <span ng-click="getCode()" ng-bind="time? time:'获取验证码'"></span>
+				</li>
+			</ul>
+			<div class="btn">
+				<button validation-submit="registerForm" 
+				class="active" 
+				ng-click="submit()" 
+				ng-disabled="!registerForm.$valid">注册</button>
+				<button ui-sref="login">登陆</button>
+			</div>
+		</form>
+	</div>
+</div>

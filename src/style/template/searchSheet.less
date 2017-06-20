@@ -1,0 +1,47 @@
+.search-sheet-wrap{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.4);
+	.search-sheet-list{
+		position: absolute;
+		bottom: 0;
+		left: 5px;
+		right: 5px;
+		.search-sheet{
+			box-sizing: border-box;
+			background-color: @defaultColor;
+			color: @headerBg;
+			border-radius: 5px;
+			max-height: 250px;
+			overflow: scroll;
+			.pl(20);
+			.pr(20);
+			li{
+				.h(70);
+				.lh(70);
+				.fs(45);
+				text-align: center;
+				.p(10);
+				border-bottom: 1px solid #ccc;
+			}
+		}
+		.sheet-btn-cancel{
+			width: 100%;
+			height: 100%;
+			background-color:  @defaultColor;
+			color: @headerBg;
+			border: 0;
+			.mt(15);
+			text-align: center;
+			.h(70);
+			.lh(70);
+			.fs(45);
+			border-radius: 5px;
+			.mb(8);
+		}
+	}
+}

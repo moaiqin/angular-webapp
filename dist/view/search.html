@@ -1,0 +1,12 @@
+<div class="search-header">
+	<span class="cancel fl" ng-click="searchCancel()">取消</span>
+	<div class="search-input">
+	    <i class="iconfont icon-sousuo_sousuo search-log"></i>
+		<input type="text" placeholder="职位/公司/城市" ng-model="searchValue" name="sreach">
+		<button class="serch-btn fr" ng-click="searchData()">搜索</button>
+	</div>
+</div>
+<div search-tab search-tab-list="searchTabList" t-click="tClick(id,name)"></div>
+<div app-position-list filter-obj="filterObj" data="positionList"></div>
+<div search-sheet change-value="sClick(id,name)" data="sheet.data" visibly="sheet.visibly"></div>
+<div app-footer></div>

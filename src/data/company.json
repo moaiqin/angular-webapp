@@ -1,0 +1,56 @@
+{
+    "id": "c1",
+    "imageUrl": "/image/company-3.png",
+    "name": "腾讯",
+    "industry": "移动互联网",
+    "state": "上市",
+    "people": "3000人",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [{
+        "id": "p1",
+        "name": "php开发工程师",
+        "createdDate": "2017-04-16 23:30",
+        "salary": "15k-25k"
+      },{
+        "id": "p45",
+        "name": "项目经理",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "40k 以上"
+      },{
+        "id": "p2",
+        "name": "C,C++工程师",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "15k-25k"
+      },{
+        "id": "p3",
+        "name": "C#开发工程师",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "15k-25k"
+      },{
+        "id": "p4",
+        "name": "构架师",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "25k-35k"
+      }]
+    }, {
+      "id": "yunying",
+      "name": "运营",
+      "positionList": [{
+        "id": "y1",
+        "name": "运营总监",
+        "createdDate": "2016-04-10 13:30",
+        "salary": "25k以上"
+      }]
+    },{
+      "id": "yunying",
+      "name": "管理",
+      "positionList": [{
+        "id": "y1",
+        "name": "运营经理",
+        "createdDate": "2017-04-10 13:30",
+        "salary": "35k以上"
+      }]
+    }]
+}

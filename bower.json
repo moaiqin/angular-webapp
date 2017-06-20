@@ -1,0 +1,27 @@
+{
+  "name": "angular-webapp",
+  "authors": [
+    "moge <982405672@qq.com>"
+  ],
+  "description": "use angulay bulid webapp",
+  "main": "",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-ui-router": "ui-router#^1.0.4",
+    "angular-validation": "^1.4.4",
+    "angular-cookies": "^1.6.4"
+  }
+}

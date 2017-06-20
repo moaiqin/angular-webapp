@@ -1,0 +1,5 @@
+<ul class="search-tab-list cl-fix">
+	<li ng-repeat="(key, item) in searchTabList" 
+	ng-click="tabClick(item)"
+	class="{{selectedId===item.id? 'active':''}}">{{item.name}}</li>
+</ul>

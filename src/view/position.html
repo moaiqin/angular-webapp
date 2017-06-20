@@ -1,0 +1,4 @@
+<div app-position-header text="职位详情"></div>
+<div app-position-desc data="positionData" com="companyMsg" ui-sref="company({id:positionData.companyId})"></div>
+<div class="apply-btn" ng-if="logined" ui-sref="a" ng-bind="'投简历'"></div>
+<div class="apply-btn" ng-if="!logined" ui-sref="login" ng-bind="'去登录'"></div>

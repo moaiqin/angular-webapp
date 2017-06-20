@@ -1,0 +1,49 @@
+.user{
+	.pt(100);
+	text-align: center;
+	.user-main-list{
+		.ml(30);
+		.mr(30);
+		.pt(50);
+		.pb(30);
+		box-sizing: border-box;
+		span{
+			float: left;
+			width: 45%;
+			.h(90);
+			.lh(90);
+			color: #fff;
+			background-color:rgba(0,190,192,0.5);
+			&:last-child{
+				margin-left: 10%;
+			}
+		}
+	}
+	.user-set{
+		.pt(40);
+		.pl(30);
+		.pr(30);
+		text-align: left;
+		li{
+			.h(100);
+			.lh(100);
+			.fs(38);
+			color: @headerBg;
+			border-bottom: 1px solid #ccc;
+		}
+	}
+}
+.logout{
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	button{
+		.h(90);
+		.lh(90);
+		width: 100%;
+		border: 0;
+		background: @headerBg;
+		color: #fff;
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "id": "p3",
+  "imageUrl": "/image/company-3.png",
+  "name": "java开发工程师",
+  "companyId": "c3",
+  "companyName": "腾讯",
+  "cityId": "c1",
+  "cityName": "深圳",
+  "scaleId": "s3",
+  "scaleName": "2000人以上",
+  "industryId": "i1",
+  "industryName": "互联网",
+  "salaryId": "s2",
+  "salaryName": "10k-25k",
+  "experience": "1-3年",
+  "education": "本科，本科以上",
+  "benefit": "成长空间大",
+  "description": "精通java开发，负责后天数据处理，了解java框架"
+}

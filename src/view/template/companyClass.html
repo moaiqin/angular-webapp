@@ -1,0 +1,18 @@
+<div class="company-class">
+	<h3>职位分类</h3>
+	<div class="postion-class">
+		<button 
+		class="{{isActive==$index? 'active':''}}"
+		ng-click="doPositionList(key)" 
+		ng-repeat="(key,classItem) in com.positionClass track by $index">{{classItem.name}}</button>
+	</div>
+	<ul class="company-class-list">
+		<li ui-sref="position({id:listItem.id})" ng-repeat="(key,listItem) in positionList">
+			<h4 ng-bind="listItem.name"></h4>
+			<p class="company-class-push-time" 
+			ng-bind="listItem.createdDate"></p>
+			<span class="get-money"
+			ng-bind="listItem.salary"></span>
+		</li>
+	</ul>
+</div>
